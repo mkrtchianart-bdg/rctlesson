@@ -3,7 +3,9 @@ import "./MainSection.css";
 import Button from "./Button";
 
 function MainSection({ title, button }) {
-  const Buttons = button.map((buttonText) => <Button text={buttonText} />);
+  const Buttons = button.map((buttonText, index) => (
+    <Button key={index} text={buttonText} />
+  ));
 
   return (
     <div className="main-section">
