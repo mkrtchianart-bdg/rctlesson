@@ -8,6 +8,7 @@ import {names} from "./consts/listArray";
 function App() {
 
   return (
+    <>
     <div className="app">
       <h1>From Design to Implementation</h1>
       <div className="sections-container">
@@ -20,9 +21,10 @@ function App() {
             />
           );
         })}
-      </div>
       <List items={names} />
+      </div>
     </div>
+    </>
   );
 }
 

@@ -1,13 +1,12 @@
 import React from "react";
 import "./list.css";
+import ListItem from "./listItem";
 
 function List({ items }) {
   return (
     <ul className="name-list">
       {items.map((item, index) => (
-        <li key={index} className="name-item">
-          {item}
-        </li>
+        <ListItem key={index} item={item} />
       ))}
     </ul>
   );
