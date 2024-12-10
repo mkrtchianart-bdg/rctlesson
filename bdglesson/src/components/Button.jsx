@@ -9,4 +9,4 @@ function Button({ text }) {
   );
 }
 
-export default Button; 
+export default Button;
