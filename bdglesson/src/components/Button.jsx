@@ -1,10 +1,10 @@
-import React from 'react';
-import './Button.css';
+import React from "react";
+import "./Button.css";
 
-function Button({ text, onClick }) {
+function Button({ handleClick, name }) {
   return (
-    <button className="section-button" onClick={onClick}>
-      {text}
+    <button className="btn" onClick={handleClick}>
+      {name}
     </button>
   );
 }
